@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="753-XU-C1v">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="lMN-mM-4iv">
+            <objects>
+                <viewController storyboardIdentifier="XLMainVC" id="753-XU-C1v" customClass="XLMainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ua2-BQ-Msl"/>
+                        <viewControllerLayoutGuide type="bottom" id="oLT-0k-63J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qWk-Na-W3W">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ3-bx-gNG">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TZ3-bx-gNG" firstAttribute="top" secondItem="ua2-BQ-Msl" secondAttribute="bottom" constant="42" id="LPR-SH-qb5"/>
+                            <constraint firstAttribute="bottom" secondItem="TZ3-bx-gNG" secondAttribute="bottom" constant="20" symbolic="YES" id="Rnt-wo-nox"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TZ3-bx-gNG" secondAttribute="trailing" constant="14" id="YIg-Ma-p8j"/>
+                            <constraint firstItem="TZ3-bx-gNG" firstAttribute="leading" secondItem="qWk-Na-W3W" secondAttribute="leadingMargin" constant="29" id="eM0-Bp-NYv">
+                                <variation key="widthClass=regular" constant="325"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Rnt-wo-nox"/>
+                                <exclude reference="YIg-Ma-p8j"/>
+                                <exclude reference="eM0-Bp-NYv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Rnt-wo-nox"/>
+                                <include reference="YIg-Ma-p8j"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="eM0-Bp-NYv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUs-XX-IeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-539" y="106"/>
+        </scene>
+    </scenes>
+</document>
